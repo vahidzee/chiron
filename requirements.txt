@@ -1,0 +1,8 @@
+django==4.0.2
+django-cors-headers==3.11.0
+django-filter==21.1
+django-phonenumber-field==6.0.0
+djangorestframework==3.13.1
+Markdown==3.3.6
+phonenumbers==8.12.43
+Pillow==9.0.1
