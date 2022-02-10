@@ -68,17 +68,6 @@ class ChangePasswordSerializer(serializers.Serializer):
     )
 
 
-class ForgetPasswordSerializer(serializers.Serializer):
-    # todo
-    token = serializers.CharField(required=True, write_only=True)
-    new_password = serializers.CharField(
-        required=True, write_only=True, style={"input_type": "password"}
-    )
-    confirm_new_password = serializers.CharField(
-        required=True, write_only=True, style={"input_type": "password"}
-    )
-
-
 class PrivateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.User
