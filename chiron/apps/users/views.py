@@ -9,7 +9,7 @@ from rest_framework import (
     permissions as drf_permissions,
     mixins,
 )
-from .. import serializers, models, permissions
+from . import serializers, models, permissions
 from rest_framework.authtoken.models import Token
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from django.core.mail import send_mail
