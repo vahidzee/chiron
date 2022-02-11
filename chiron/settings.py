@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "corsheaders",
     # developed apps
     "chiron.apps.users",
+    "chiron.apps.visits",
 ]
 
 MIDDLEWARE = [

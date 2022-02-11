@@ -19,6 +19,7 @@ from rest_framework import routers
 from django.conf import settings
 
 import chiron.apps.users.views as user_views
+import chiron.apps.visits.views as visit_views
 
 router = routers.DefaultRouter()
 router.get_api_root_view().cls.__name__ = "ChironAPIRoot"
@@ -27,7 +28,7 @@ router.get_api_root_view().cls.__doc__ = (
 )
 
 router.register("user", user_views.UserViewSet, basename="user")
-
+router.register("appointment", visit_views.AppointmentViewSet, basename="appointment")
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("auth/", include("rest_framework.urls")),
