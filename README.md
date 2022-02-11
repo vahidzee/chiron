@@ -12,7 +12,7 @@
 In a `python3.9+` envioronment, do as follows:
 ```bash
 pip install -r requirements.txt
-python manage.py makemigrations users
+python manage.py makemigrations users visits
 python manage.py migrate
 python manage.py runserver
 ```
