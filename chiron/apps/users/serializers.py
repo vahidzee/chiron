@@ -33,6 +33,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
             address=self.validated_data["address"],
             first_name=self.validated_data["first_name"],
             last_name=self.validated_data["last_name"],
+            is_patient=self.validated_data["is_patient"],
+            is_doctor=self.validated_data["is_doctor"],
         )
         confirm, password = (
             self.validated_data["confirm_password"],
